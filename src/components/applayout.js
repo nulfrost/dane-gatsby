@@ -16,13 +16,15 @@ const AppLayout = ({ children }) => (
       <Header>
         <Name>Dane Miller</Name>
         <Nav>
+          <NavLink to="/">home</NavLink>
           <NavLink to="/projects">projects</NavLink>
-          <NavLink to="/tech">tech</NavLink>
         </Nav>
       </Header>
       {children}
       <Footer>
-        <small>dane@danethe.dev</small>
+        <a href="mailto:khadane.miller@gmail.com" className="text-xs">
+          Contact me!
+        </a>
         <LinkContainer>
           <ExternalLink
             href="https://twitter.com/hybridearth"
