@@ -1,6 +1,19 @@
 import styled from "@emotion/styled"
+import { keyframes } from "@emotion/core"
 import tw from "tailwind.macro"
 import { Link } from "gatsby"
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-80px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+`
 
 export const Header = styled.header`
   ${tw`flex flex-col sm:flex-row justify-between p-3`}
@@ -18,6 +31,7 @@ export const ExternalLink = styled.a`
 
 export const IntroText = styled.p`
   ${tw`text-2xl sm:text-3xl text-center text-gray-900 font-thin`}
+  animation: ${fadeIn} 2s;
 `
 
 export const Project = styled.a`
