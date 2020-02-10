@@ -25,7 +25,7 @@ const Projects = () => (
           title: "Twitchy",
           description: "Twitch stream roulette, find a random twitch streamer.",
           tech: "React // MaterializeCSS // SASS",
-          link: "https://twitchy.herokuapp.com",
+          link: "https://twitchyapp.herokuapp.com",
         },
       ].map(({ title, description, tech, link }) => (
         <Project href={link} target="_blank" rel="noopener noreferrer">
