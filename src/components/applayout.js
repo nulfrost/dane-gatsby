@@ -16,7 +16,7 @@ const AppLayout = ({ children }) => (
           {" "}
           Dane Miller
         </Link>
-        <nav className="flex justify-between w-full sm:w-1/2 lg:w-1/3 items-center">
+        <nav className="flex justify-between w-2/3 sm:w-1/2 lg:w-1/3 items-center">
           <NavLink to="/">home</NavLink>
           <NavLink to="/projects">projects</NavLink>
           <a
