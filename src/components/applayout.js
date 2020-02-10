@@ -31,27 +31,24 @@ const AppLayout = ({ children }) => (
       {children}
       <Footer>
         <div>
-          <ExternalLink
-            href="https://twitter.com/hybridearth"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            twitter
-          </ExternalLink>
-          <ExternalLink
-            href="https://github.com/Danex2"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            github
-          </ExternalLink>
-          <ExternalLink
-            href="https://www.linkedin.com/in/dane-miller-96b461164/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            linkedin
-          </ExternalLink>
+          {[
+            {
+              name: "twitter",
+              link: "https://twitter.com/hybridearth",
+            },
+            {
+              name: "github",
+              link: "https://github.com/Danex2",
+            },
+            {
+              name: "linkedin",
+              link: "https://www.linkedin.com/in/dane-miller-96b461164/",
+            },
+          ].map(({ name, link }) => (
+            <ExternalLink href={link} rel="noopener noreferrer" target="_blank">
+              {name}
+            </ExternalLink>
+          ))}
         </div>
       </Footer>
     </Layout>
