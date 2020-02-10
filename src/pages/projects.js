@@ -8,13 +8,26 @@ const Projects = () => (
     <SEO title="Projects" />
     <Content>
       <h1 className="mb-3 font-bold text-xl text-left">Web</h1>
-      <Project>
-        <ProjectTitle>Coin Info</ProjectTitle>
-        <p>View price data about various cryptocurrencies.</p>
-        <p className="text-xs lowercase">
-          React &bull; Styled-Components &bull; coinmarketcap api
-        </p>
-      </Project>
+      {[
+        {
+          title: "Coin Info",
+          description: "View price data about various cryptocurrencies.",
+          tech: "React // Styled-Components // coinmarketcap api",
+          link: "https://coininfo.netlify.com",
+        },
+        {
+          title: "FindMyPet",
+          description: "Helping pet owners in the GTA find their lost pets.",
+          tech: "React // Express/Nodejs // TailwindCSS // MongoDB",
+          link: "https://findmypet1.herokuapp.com",
+        },
+      ].map(({ title, description, tech, link }) => (
+        <Project href={link} target="_blank" rel="noopener noreferrer">
+          <ProjectTitle>{title}</ProjectTitle>
+          <p>{description}</p>
+          <p className="text-xs lowercase">{tech}</p>
+        </Project>
+      ))}
     </Content>
   </AppLayout>
 )
