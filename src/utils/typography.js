@@ -1,5 +1,5 @@
 import Typography from "typography"
-import noriegaTheme from "typography-theme-noriega"
+import moragaTheme from "typography-theme-moraga"
 
-const typography = new Typography(noriegaTheme)
+const typography = new Typography(moragaTheme)
 export default typography

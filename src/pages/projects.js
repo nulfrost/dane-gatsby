@@ -21,11 +21,17 @@ const Projects = () => (
           tech: "React // Express/Nodejs // TailwindCSS // MongoDB",
           link: "https://findmypet1.herokuapp.com",
         },
+        {
+          title: "Twitchy",
+          description: "Twitch stream roulette, find a random twitch streamer.",
+          tech: "React // MaterializeCSS // SASS",
+          link: "https://twitchy.herokuapp.com",
+        },
       ].map(({ title, description, tech, link }) => (
         <Project href={link} target="_blank" rel="noopener noreferrer">
           <ProjectTitle>{title}</ProjectTitle>
-          <p>{description}</p>
-          <p className="text-xs lowercase">{tech}</p>
+          <p className="text-lg">{description}</p>
+          <p className="text-sm lowercase">{tech}</p>
         </Project>
       ))}
     </Content>
