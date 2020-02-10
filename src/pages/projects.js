@@ -27,6 +27,12 @@ const Projects = () => (
           tech: "React // MaterializeCSS // SASS",
           link: "https://twitchyapp.herokuapp.com",
         },
+        {
+          title: "Ping Landing Page",
+          description: "A landing page made with pure HTML and CSS.",
+          tech: "HTML // CSS",
+          link: "https://ping-landing-page.netlify.com/",
+        },
       ].map(({ title, description, tech, link }) => (
         <Project href={link} target="_blank" rel="noopener noreferrer">
           <ProjectTitle>{title}</ProjectTitle>
