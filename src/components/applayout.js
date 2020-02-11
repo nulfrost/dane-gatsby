@@ -42,7 +42,7 @@ const AppLayout = ({ children }) => (
             },
             {
               name: "linkedin",
-              link: "https://www.linkedin.com/in/dane-miller-96b461164/",
+              link: "https://www.linkedin.com/in/dmiller94",
             },
           ].map(({ name, link }) => (
             <ExternalLink href={link} rel="noopener noreferrer" target="_blank">
